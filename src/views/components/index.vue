@@ -65,7 +65,7 @@ export default {
           text: "项目启动会-外部", // 任务名
           start_date: "2023-04-08", // 开始时间
           id: 11, // 任务id
-          duration: 3, // 任务时长，从start_date开始计算
+          duration: 5, // 任务时长，从start_date开始计算
           parent: 1, // 父任务ID
           type: 1,
           progress: 0.5,
