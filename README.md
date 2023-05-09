@@ -1,10 +1,5 @@
 # demo
-<<<<<<< HEAD
-demo
-=======
-<<<<<<< HEAD
-demo
-=======
+demo project
 
 ## Project setup
 ```
