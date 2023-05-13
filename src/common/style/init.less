@@ -1,9 +1,21 @@
 html,body,div,span,p,ul,ol,li,table,tr,td,dd {
   box-sizing: border-box;
   &::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
   }
+  // 滚动条
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+  
+  // 滚动条槽
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #dedede;
+  }
+
 }
 
 html,body {
