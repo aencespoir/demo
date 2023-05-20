@@ -3,13 +3,13 @@
 export const routes = [
   {
     path: '/',
-    redirect: { name: 'scroll' }
+    redirect: { name: 'publicComp' }
   },
   {
     path: '/publicComp',
     name: 'publicComp',
     component: () => import(/* webpackChunkName: "publicComp" */ '@pCom'),
-    redirect: { path: '/' },
+    redirect: { name: 'scroll' },
     children: [
       {
         path: 'index',

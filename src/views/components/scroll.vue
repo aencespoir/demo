@@ -90,6 +90,7 @@ export default {
         }
       }
 
+      // 生成各个元素的样式组合 Map
       function updateMap() {
         animationMap.clear()
         const stemp = Math.floor(list.clientHeight / 2) + 100
@@ -100,12 +101,17 @@ export default {
           animationMap.set(item, getAnimationMap(scrollStart, scrollEnd, item))
         }
       }
+      updateMap() // 初始化调用一次
 
-      updateMap()
-
-      // 更新元素的样式
+      // 设置元素的样式
       function updateStyle() {
+        // 遍历每一个元素
         for(let [dom , value] of animationMap) {
+          /**
+           * value: {
+           *    xxx: function() {}
+           * }
+           */
           for (const cssProp in value) {
             dom.style[cssProp] = value[cssProp](ssY)
           }
